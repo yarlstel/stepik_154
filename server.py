@@ -6,7 +6,8 @@ s.listen(5)
 while True:
   conn, addr = s.accept()                                                 
   while True:                                                             
-    data = conn.recv(1024)                                          
+    data = conn.recv(1024)  
+    print(data.decode)
     if not data or data.decode() == 'close' : break
     conn.send(data)
   conn.close
