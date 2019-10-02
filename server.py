@@ -8,7 +8,8 @@ while True:
   while True:                                                             
     data = conn.recv(1024)  
     print(data.decode())
-    if not data or data.decode() == 'close' : break
+    if not data : break
+    if data.decode() == 'close' : exit()
     conn.send(data)
   conn.close
                 
