@@ -10,6 +10,7 @@ sudo tar xzf Python-3.7.4.tgz
 
 cd Python-3.7.4
 sudo ./configure --enable-optimizations
+sudo cp /home/box/web/Setup.sidt Modules\
 
 
 #sudo apt install python3.5
